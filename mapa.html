@@ -38,10 +38,11 @@
         function setup() {
             var miMapa = L.map('mapamundi').setView([20, 0], 2);
 
-            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+
+            L.tileLayer('https://api.mapbox.com/styles/v1/matihagene/ck8nefgd00or51jpjarhst21z/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWF0aWhhZ2VuZSIsImEiOiJjazhuZTdnbW0wdGdlM21uMmN2eWw0bTR6In0.iW2-260CobGJxXN2f4xL8A', {
                 minZoom:2,
                 maxZoom: 10,
-                id: 'mapbox/streets-v11' //por acá estaría el cambio para puntos extra
+                 //por acá estaría el cambio para puntos extra
             }).addTo(miMapa);
 
             for (let x = 0; x < 50; x++) {
