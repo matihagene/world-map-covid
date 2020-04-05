@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        
+        select {
+            position: absolute;
+            right: 1%;
+            top: 2%;
+            z-index: 99999;
+        }
+        
+        canvas {
+            display: block;
+        }
+    </style>
+    <title>CORONAVIRUS - MATI HAGEN</title>
+</head>
+
+<body>
+
+    <select onchange="if (this.value) window.location.href=this.value">
+        <option value="index.html">Portada &rarr; index.html</option>
+        <option value="graph.html" selected>Gráfico &rarr; graph.html</option>
+        <option value="mapa.html">Mundial &rarr; mapa.html</option>
+    </select>
+
+    <script>
+        var url = "https://pomber.github.io/covid19/timeseries.json";
+        var casos, portugal, libia, marruecos, argelia, tunez;
+        var marzo = [];
+        var marzo_portugal = [];
+        var marzo_libia = [];
+        var marzo_marruecos = [];
+        var marzo_argelia = [];
+        var marzo_tunez = [];
+
+        function preload() {
+            casos = loadJSON(url);
+        }
+
+        function setup() {
+            createCanvas(windowWidth, windowHeight).id("chart");
+
+            for (let x = 1; x <= 31; x++) {
+                marzo.push(x);
+            }
+
+            portugal = casos.Portugal;
+            libia = casos.Libya;
+            marruecos = casos.Morocco;
+            argelia = casos.Algeria;
+            tunez = casos.Tunisia;
+
+            for (let x = 0; x < portugal.length; x++) {
+                if (portugal[x].date.includes("-3-")) {
+                    marzo_portugal.push(portugal[x].recovered);
+                }
+            }
+
+            for (let x = 0; x < libia.length; x++) {
+                if (libia[x].date.includes("-3-")) {
+                    marzo_libia.push(libia[x].recovered);
+                }
+            }
+
+            for (let x = 0; x < marruecos.length; x++) {
+                if (marruecos[x].date.includes("-3-")) {
+                    marzo_marruecos.push(marruecos[x].recovered);
+                }
+            }
+
+            for (let x = 0; x < argelia.length; x++) {
+                if (argelia[x].date.includes("-3-")) {
+                    marzo_argelia.push(argelia[x].recovered);
+                }
+            }
+
+            for (let x = 0; x < tunez.length; x++) {
+                if (tunez[x].date.includes("-3-")) {
+                    marzo_tunez.push(tunez[x].recovered);
+                }
+            }
+
+            new Chart(document.getElementById('chart').getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: marzo,
+                    datasets: [{
+                        label: 'Portugal',
+                        backgroundColor: 'rgba(190,0,39,.1)',
+                        borderColor: 'rgb(190,0,39)',
+                        borderWidth: 2,
+                        pointRadius: 2,
+                        lineTension: 0,
+                        data: marzo_portugal
+                    }, {
+                        label: 'Libia',
+                        backgroundColor: 'rgba(0,0,0,.1)',
+                        borderColor: 'rgb(0,0,0)',
+                        borderWidth: 2,
+                        pointRadius: 2,
+                        lineTension: 0,
+                        data: marzo_libia
+                    }, {
+                        label: 'Marruecos',
+                        backgroundColor: 'rgba(193,39,45,.1)',
+                        borderColor: 'rgb(193,39,45)',
+                        borderWidth: 2,
+                        pointRadius: 2,
+                        lineTension: 0,
+                        data: marzo_marruecos
+                    }, {
+                        label: 'Argelia',
+                        backgroundColor: 'rgba(0,98,51,.1)',
+                        borderColor: 'rgb(0,98,51)',
+                        borderWidth: 2,
+                        pointRadius: 2,
+                        lineTension: 0,
+                        data: marzo_argelia
+                    }, {
+                        label: 'Túnez',
+                        backgroundColor: 'rgba(231,0,19,.1)',
+                        borderColor: 'rgb(231,0,19)',
+                        borderWidth: 2,
+                        pointRadius: 2,
+                        lineTension: 0,
+                        data: marzo_tunez
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: 'Casos recuperados de coronavirus durante marzo 2020'
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                callback: function(value, index, values) {
+                                    return value;
+                                }
+                            }
+                        }]
+                    }
+                }
+            }); //acá se cierra el new Chart de chart.js
+        } //acá se cierra el function setup de p5.js
+    </script>
+</body>
+
+</html>
