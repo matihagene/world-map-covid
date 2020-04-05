@@ -36,12 +36,13 @@
         }
 
         function setup() {
-            var miMapa = L.map('mapamundi').setView([20, 0], 2);
+            var miMapa = L.map('mapamundi').setView([45, 18], 4);
 
 
             L.tileLayer('https://api.mapbox.com/styles/v1/matihagene/ck8nefgd00or51jpjarhst21z/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWF0aWhhZ2VuZSIsImEiOiJjazhuZTdnbW0wdGdlM21uMmN2eWw0bTR6In0.iW2-260CobGJxXN2f4xL8A', {
-                minZoom:2,
-                maxZoom: 10,
+                minZoom: 2,
+                maxZoom: 14,
+                attribution: '© MATI.CL',
                  //por acá estaría el cambio para puntos extra
             }).addTo(miMapa);
 
@@ -66,8 +67,13 @@
                     else { 
                         semaforo = '#388e3c'; //verde para los demás casos
                     }                   
+                
 
-                L.circle([latitud,longitud],{radius:100000,fillColor:semaforo,fillOpacity:0.9,color:'#666666',weight:1}).addTo(miMapa).bindPopup("<strong>" + data[x].pais + "</strong><br />" + data[x].casos  + " casos confirmados" + "<br />" + data[x].habitantes  + " millones de habitantes"); //todas los círculos tienen el mismo tamaño; que se vean distintos les muestra la "deformación" del mismo mapamundi
+                let miles = data[x].casos.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+
+                //se crea variable en miles para que al aparecer el texto en el popup sea más fácil de visualizar
+
+                L.circle([latitud,longitud],{radius:100000,fillColor:semaforo,fillOpacity:0.9,color:semaforo,weight:1}).addTo(miMapa).bindPopup("<strong>" + data[x].pais + "</strong><br />" + miles  + " casos confirmados" + "<br />" + data[x].habitantes  + " millones de habitantes"); //todas los círculos tienen el mismo tamaño; que se vean distintos les muestra la "deformación" del mismo mapamundi
 
                 console.log((x+1) + ". " + data[x].pais + ": " + porcentaje + "%"); //puedes asomarte a la Consola de Javascript
 
