@@ -38,12 +38,14 @@
         function setup() {
             var miMapa = L.map('mapamundi').setView([45, 18], 4);
 
-
             L.tileLayer('https://api.mapbox.com/styles/v1/matihagene/ck8nefgd00or51jpjarhst21z/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWF0aWhhZ2VuZSIsImEiOiJjazhuZTdnbW0wdGdlM21uMmN2eWw0bTR6In0.iW2-260CobGJxXN2f4xL8A', {
                 minZoom: 2,
                 maxZoom: 14,
                 attribution: '© MATI.CL',
                  //por acá estaría el cambio para puntos extra
+                 //se cambio por un mapa con colores personalizados
+                 //además se corrigió el valor de la cantidad de casos agregándole el punto para separar miles a través de código y creando la variable miles en la linea 74
+
             }).addTo(miMapa);
 
             for (let x = 0; x < 50; x++) {
