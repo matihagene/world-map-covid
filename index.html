@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
     <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
         html,
         body {
             margin: 0;
@@ -15,6 +18,19 @@
         
         body {
             font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:23% 0;
+        }
+
+
+        h1 {
+            font-family: 'Patua One', cursive;
+            font-size: 60px;
         }
         
         select {
@@ -39,7 +55,14 @@
         <option value="mapa.html">Mundial &rarr; mapa.html</option>
     </select>
 
+    
+    <div class='contenedor'>
+        <h1>Portugal</h1>
+    </div>
+
+
     <script>
+
         var url = "https://pomber.github.io/covid19/timeseries.json";
 
         var casos, portugal, confirmados, muertos, recuperados;
