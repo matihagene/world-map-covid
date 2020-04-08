@@ -17,14 +17,7 @@
         }
         
         body {
-            font-family: Helvetica, Arial, sans-serif;
-        }
-
-        .contenedor {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin:23% 0;
+            font-family: 'Patua One', cursive;
         }
 
 
@@ -56,9 +49,7 @@
     </select>
 
     
-    <div class='contenedor'>
-        <h1>Portugal</h1>
-    </div>
+
 
 
     <script>
@@ -103,6 +94,11 @@
                 textSize(28);
                 text('☺', random(20, width - 30), random(30, height - 20));
             }
+
+            textSize(60);
+            textAlign(CENTER);
+            fill(85, 85, 85);
+            text("PORTUGAL", width / 2, height / 2);
         }
 
         function windowResized() {
