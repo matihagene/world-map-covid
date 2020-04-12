@@ -513,6 +513,14 @@
       "population":11.57
    },
    {
+      "country":"Cabo Verde",
+      "coordinates":[
+         14.93152,
+         -23.51254
+      ],
+      "population":0.543
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
