@@ -1,6 +1,6 @@
 [
    {
-      "pais":"Afganistán",
+      "pais":"Afghanistan",
       "coordenadas":[
          34.430147,
          65.8677043
@@ -18,7 +18,7 @@
       "habitantes":2.8
    },
    {
-      "pais":"Alemania",
+      "pais":"Germany",
       "coordenadas":[
          50.044098, 
          10.488053
@@ -54,7 +54,7 @@
       "habitantes":8.822
    },
    {
-      "pais":"Bélgica",
+      "pais":"Belgium",
       "coordenadas":[
          50.854954,
          4.3051786
@@ -63,7 +63,7 @@
       "habitantes":11.4
    },
    {
-      "pais":"Bielorrusia",
+      "pais":"Belarus",
       "coordenadas":[
          53.391554,
          27.787079
@@ -81,7 +81,7 @@
       "habitantes":11.39
    },
    {
-      "pais":"Brasil",
+      "pais":"Brazil",
       "coordenadas":[
          -12.414003,
          -51.159217
@@ -135,7 +135,7 @@
       "habitantes":1386000
    },
    {
-      "pais":"Dinamarca",
+      "pais":"Denmark",
       "coordenadas":[
          56.2639198,
          9.5017853
@@ -153,7 +153,7 @@
       "habitantes":16.62
    },
    {
-      "pais":"EE.UU.",
+      "pais":"US",
       "coordenadas":[
          39.7618,
          -104.881
@@ -162,7 +162,7 @@
       "habitantes":327.2
    },
    {
-      "pais":"Egipto",
+      "pais":"Egypt",
       "coordenadas":[
          26.8205528,
          30.8024979
@@ -171,7 +171,7 @@
       "habitantes":99.14
    },
    {
-      "pais":"España",
+      "pais":"Spain",
       "coordenadas":[
          40.4378693,
          -3.8199646
@@ -180,7 +180,7 @@
       "habitantes":46.66
    },
    {
-      "pais":"Filipinas",
+      "pais":"Philippines",
       "coordenadas":[
          12.8797207,
          121.7740173
@@ -189,7 +189,7 @@
       "habitantes":3107
    },
    {
-      "pais":"Finlandia",
+      "pais":"Finland",
       "coordenadas":[
          64.657331,
          27.152155
@@ -198,7 +198,7 @@
       "habitantes":5.51
    },
    {
-      "pais":"Francia",
+      "pais":"France",
       "coordenadas":[
          47.078306,
          2.4853123
@@ -207,7 +207,7 @@
       "habitantes":66.99
    },
    {
-      "pais":"Grecia",
+      "pais":"Greece",
       "coordenadas":[
          37.990832,
          23.703234
@@ -243,7 +243,7 @@
       "habitantes":266.6
    },
    {
-      "pais":"Irlanda",
+      "pais":"Ireland",
       "coordenadas":[
          53.072833,
          -7.762137
@@ -252,7 +252,7 @@
       "habitantes":4.83
    },
    {
-      "pais":"Islandia",
+      "pais":"Iceland",
       "coordenadas":[
          64.627458,
          -18.58948
@@ -261,7 +261,7 @@
       "habitantes":0.36
    },
    {
-      "pais":"Italia",
+      "pais":"Italy",
       "coordenadas":[
          43.921485,
          11.45404
@@ -270,7 +270,7 @@
       "habitantes":60.48
    },
    {
-      "pais":"Japón",
+      "pais":"Japan",
       "coordenadas":[
          36.458084,
          138.879639
@@ -279,7 +279,7 @@
       "habitantes":126.8
    },
    {
-      "pais":"México",
+      "pais":"Mexico",
       "coordenadas":[
          23.251826,
          -102.467611
@@ -306,7 +306,7 @@
       "habitantes":2.53
    },
    {
-      "pais":"Países Bajos",
+      "pais":"Netherlands",
       "coordenadas":[
          52.3738,
          4.89093
@@ -342,7 +342,7 @@
       "habitantes":10.29
    },
    {
-      "pais":"Reino Unido",
+      "pais":"United Kingdom",
       "coordenadas":[
          53.180569,
          -1.570986
@@ -351,7 +351,7 @@
       "habitantes":66.44
    },
    {
-      "pais":"Rumanía",
+      "pais":"Romania",
       "coordenadas":[
          46.204196,
          24.9988703
@@ -360,7 +360,7 @@
       "habitantes":19.53
    },
    {
-      "pais":"Rusia",
+      "pais":"Russia",
       "coordenadas":[
          55.7526,
          37.6231
@@ -378,7 +378,7 @@
       "habitantes":21.44
    },
    {
-      "pais":"Sudáfrica",
+      "pais":"South Africa",
       "coordenadas":[
          -29.293744,
          23.817307
@@ -387,7 +387,7 @@
       "habitantes":56.72
    },
    {
-      "pais":"Suecia",
+      "pais":"Sweden",
       "coordenadas":[
          63.49709,
          15.9927033
@@ -396,7 +396,7 @@
       "habitantes":10.12
    },
    {
-      "pais":"Suiza",
+      "pais":"Switzerland",
       "coordenadas":[
          46.9489,
          7.40737
@@ -405,7 +405,7 @@
       "habitantes":8.57
    },
    {
-      "pais":"Tailandia",
+      "pais":"Thailand",
       "coordenadas":[
          15.913618,
          100.7015
@@ -414,7 +414,7 @@
       "habitantes":69.04
    },
    {
-      "pais":"Taiwán",
+      "pais":"Taiwan*",
       "coordenadas":[
          23.3915073,
          120.3580988
@@ -423,7 +423,7 @@
       "habitantes":23.78
    },
    {
-      "pais":"Turquía",
+      "pais":"Turkey",
       "coordenadas":[
          39.9199,
          32.8543
