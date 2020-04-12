@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="lodash.js"></script>
+    <style>
+        html, body {margin: 0; padding: 0; overflow: hidden;}
+        body{font-family:Helvetica, Arial, sans-serif;}
+        select {position: absolute; right: 1%; top: 2%; z-index:99999;}       
+        canvas {display: block;}
+    </style>
+    <title>World Map COVID-19 | MATI.CL</title>
+</head>
+
+<body>
+
+    <select onchange="if (this.value) window.location.href=this.value">
+        <option value="index.html" selected>World Map</option>
+    </select>
+
+    <div id="mapamundi" style="width: 100vw; height: 100vh;"></div>
+
+    <script>
+        var url = "https://raw.githubusercontent.com/matihagene/world-map-covid/gh-pages/data.json"; 
+        
+        var urlCases = "https://pomber.github.io/covid19/timeseries.json";
+
+        var data;
+
+        var dataCases;
+
+        function preload() {
+            data = loadJSON(url);
+            dataCases = loadJSON(urlCases);
+        }
+
+
+        function setup() {
+            var miMapa = L.map('mapamundi').setView([45, 18], 4);
+
+            L.tileLayer('https://api.mapbox.com/styles/v1/matihagene/ck8nefgd00or51jpjarhst21z/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWF0aWhhZ2VuZSIsImEiOiJjazhuZTdnbW0wdGdlM21uMmN2eWw0bTR6In0.iW2-260CobGJxXN2f4xL8A', {
+                minZoom: 2,
+                maxZoom: 14,
+                attribution: '© MATI.CL',
+          
+                 //se corrigió el valor de la cantidad de casos agregándole el punto para separar miles a través de código y creando la variable miles en la linea 74
+
+            }).addTo(miMapa);
+
+
+            for (let x = 0; x < 50; x++) {
+                
+                let latitude = data[x].coordinates[0];
+                
+                let longitude = data[x].coordinates[1];
+
+                let names = data[x].country;
+
+                let key = dataCases.Afghanistan["length"]-1;
+
+                let key2 = 'confirmed'
+
+                let cases = _.get(dataCases, [names, key, key2]);
+
+                let thousands = cases.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');               
+                //se crea variable en thousands para que al aparecer el texto en el popup sea más fácil de visualizar
+
+                let percentage = (cases*100)/(data[x].population*1000000); // percentage de afectados en el país
+                
+                percentage = Math.round((percentage + Number.EPSILON) * 100000) / 100000; //redondeo el percentage a cinco decimales
+                
+                let light; //creo una variable a la que se le asignará un valor dependiendo del caso
+
+                    if(percentage >= 0.1){ 
+                        light = '#d32f2f'; //rojo en caso percentage de confirmados sean igual o mayor a 0.1
+                    }
+                    else if(percentage < 0.1 && percentage > 0.01) { 
+                        light = '#fbc02d'; //amarillo en caso los confirmados estén entre 0.1% y 0.01% de la población
+                    }
+                    else { 
+                        light = '#388e3c'; //verde para los demás casos
+                    }
+
+                L.circle([latitude,longitude],{radius:100000,fillColor:light,fillOpacity:0.9,color:light,weight:1}).addTo(miMapa).bindPopup("<strong>" + data[x].country + "</strong><br />" + thousands +" confirmed cases" + "<br />" + data[x].population  + " population"); //todas los círculos tienen el mismo tamaño; que se vean distintos les muestra la "deformación" del mismo mapamundi
+
+                console.log((x+1) + ". " + data[x].country + ": " + percentage + "%"); //puedes asomarte a la Consola de Javascript
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
