@@ -1,452 +1,452 @@
 [
    {
-      "pais":"Afghanistan",
-      "coordenadas":[
+      "country":"Afghanistan",
+      "coordinates":[
          34.430147,
          65.8677043
       ],
       "casos":423,
-      "habitantes":35.53
+      "population":35.53
    },
    {
-      "pais":"Albania",
-      "coordenadas":[
+      "country":"Albania",
+      "coordinates":[
          41.1533,
          20.1683
       ],
       "casos":400,
-      "habitantes":2.8
+      "population":2.8
    },
    {
-      "pais":"Germany",
-      "coordenadas":[
+      "country":"Germany",
+      "coordinates":[
          50.044098, 
          10.488053
       ],
       "casos":109329,
-      "habitantes":82.79
+      "population":82.79
    },
    {
-      "pais":"Argentina",
-      "coordenadas":[
+      "country":"Argentina",
+      "coordinates":[
          -37.117672,
          -62.57256
       ],
       "casos":1715,
-      "habitantes":44.27
+      "population":44.27
    },
    {
-      "pais":"Australia",
-      "coordenadas":[
+      "country":"Australia",
+      "coordinates":[
          -23.41724,
          134.77015
       ],
       "casos":6013,
-      "habitantes":24.6
+      "population":24.6
    },
    {
-      "pais":"Austria",
-      "coordenadas":[
+      "country":"Austria",
+      "coordinates":[
          47.40762,
          14.4953503
       ],
       "casos":12881,
-      "habitantes":8.822
+      "population":8.822
    },
    {
-      "pais":"Belgium",
-      "coordenadas":[
+      "country":"Belgium",
+      "coordinates":[
          50.854954,
          4.3051786
       ],
       "casos":23403,
-      "habitantes":11.4
+      "population":11.4
    },
    {
-      "pais":"Belarus",
-      "coordenadas":[
+      "country":"Belarus",
+      "coordinates":[
          53.391554,
          27.787079
       ],
       "casos":1066,
-      "habitantes":9.508
+      "population":9.508
    },
    {
-      "pais":"Bolivia",
-      "coordenadas":[
+      "country":"Bolivia",
+      "coordinates":[
          -16.2901535,
          -63.5886536
       ],
       "casos":210,
-      "habitantes":11.39
+      "population":11.39
    },
    {
-      "pais":"Brazil",
-      "coordenadas":[
+      "country":"Brazil",
+      "coordinates":[
          -12.414003,
          -51.159217
       ],
       "casos":14152,
-      "habitantes":210.4
+      "population":210.4
    },
    {
-      "pais":"Canada",
-      "coordenadas":[
+      "country":"Canada",
+      "coordinates":[
          56.1303673,
          -106.3467712
       ],
       "casos":17897,
-      "habitantes":37.34
+      "population":37.34
    },
    {
-      "pais":"Colombia",
-      "coordenadas":[
+      "country":"Colombia",
+      "coordinates":[
          4.6482836,
          -74.2482379
       ],
       "casos":1780,
-      "habitantes":43.07
+      "population":43.07
    },
    {
-      "pais":"Costa Rica",
-      "coordenadas":[
+      "country":"Costa Rica",
+      "coordinates":[
          9.9085,
          -84.0958
       ],
       "casos":483,
-      "habitantes":4.5
+      "population":4.5
    },
    {
-      "pais":"Chile",
-      "coordenadas":[
+      "country":"Chile",
+      "coordinates":[
          -33.4372,
          -70.6506
       ],
       "casos":5546,
-      "habitantes":18.05
+      "population":18.05
    },
    {
-      "pais":"China",
-      "coordenadas":[
+      "country":"China",
+      "coordinates":[
          33.907131,
          104.119673
       ],
       "casos":81802,
-      "habitantes":1386000
+      "population":1386000
    },
    {
-      "pais":"Denmark",
-      "coordenadas":[
+      "country":"Denmark",
+      "coordinates":[
          56.2639198,
          9.5017853
       ],
       "casos":5386,
-      "habitantes":5.81
+      "population":5.81
    },
    {
-      "pais":"Ecuador",
-      "coordenadas":[
+      "country":"Ecuador",
+      "coordinates":[
          -0.225219,
          -78.5248
       ],
       "casos":3995,
-      "habitantes":16.62
+      "population":16.62
    },
    {
-      "pais":"US",
-      "coordenadas":[
+      "country":"US",
+      "coordinates":[
          39.7618,
          -104.881
       ],
       "casos":400593,
-      "habitantes":327.2
+      "population":327.2
    },
    {
-      "pais":"Egypt",
-      "coordenadas":[
+      "country":"Egypt",
+      "coordinates":[
          26.8205528,
          30.8024979
       ],
       "casos":1450,
-      "habitantes":99.14
+      "population":99.14
    },
    {
-      "pais":"Spain",
-      "coordenadas":[
+      "country":"Spain",
+      "coordinates":[
          40.4378693,
          -3.8199646
       ],
       "casos":146690,
-      "habitantes":46.66
+      "population":46.66
    },
    {
-      "pais":"Philippines",
-      "coordenadas":[
+      "country":"Philippines",
+      "coordinates":[
          12.8797207,
          121.7740173
       ],
       "casos":3870,
-      "habitantes":3107
+      "population":3107
    },
    {
-      "pais":"Finland",
-      "coordenadas":[
+      "country":"Finland",
+      "coordinates":[
          64.657331,
          27.152155
       ],
       "casos":2487,
-      "habitantes":5.51
+      "population":5.51
    },
    {
-      "pais":"France",
-      "coordenadas":[
+      "country":"France",
+      "coordinates":[
          47.078306,
          2.4853123
       ],
       "casos":109069,
-      "habitantes":66.99
+      "population":66.99
    },
    {
-      "pais":"Greece",
-      "coordenadas":[
+      "country":"Greece",
+      "coordinates":[
          37.990832,
          23.703234
       ],
       "casos":1832,
-      "habitantes":10.74
+      "population":10.74
    },
    {
-      "pais":"Honduras",
-      "coordenadas":[
+      "country":"Honduras",
+      "coordinates":[
          14.1,
          -87.2167
       ],
       "casos":312,
-      "habitantes":9.265
+      "population":9.265
    },
    {
-      "pais":"India",
-      "coordenadas":[
+      "country":"India",
+      "coordinates":[
          21.1610714,
          79.0022979
       ],
       "casos":5480,
-      "habitantes":1391.7
+      "population":1391.7
    },
    {
-      "pais":"Indonesia",
-      "coordenadas":[
+      "country":"Indonesia",
+      "coordinates":[
          -0.789275,
          113.9213257
       ],
       "casos":2956,
-      "habitantes":266.6
+      "population":266.6
    },
    {
-      "pais":"Ireland",
-      "coordenadas":[
+      "country":"Ireland",
+      "coordinates":[
          53.072833,
          -7.762137
       ],
       "casos":5709,
-      "habitantes":4.83
+      "population":4.83
    },
    {
-      "pais":"Iceland",
-      "coordenadas":[
+      "country":"Iceland",
+      "coordinates":[
          64.627458,
          -18.58948
       ],
       "casos":1616,
-      "habitantes":0.36
+      "population":0.36
    },
    {
-      "pais":"Italy",
-      "coordenadas":[
+      "country":"Italy",
+      "coordinates":[
          43.921485,
          11.45404
       ],
       "casos":135586,
-      "habitantes":60.48
+      "population":60.48
    },
    {
-      "pais":"Japan",
-      "coordenadas":[
+      "country":"Japan",
+      "coordinates":[
          36.458084,
          138.879639
       ],
       "casos":4257,
-      "habitantes":126.8
+      "population":126.8
    },
    {
-      "pais":"Mexico",
-      "coordenadas":[
+      "country":"Mexico",
+      "coordinates":[
          23.251826,
          -102.467611
       ],
       "casos":2785,
-      "habitantes":209.3
+      "population":209.3
    },
    {
-      "pais":"Mongolia",
-      "coordenadas":[
+      "country":"Mongolia",
+      "coordinates":[
          47.2046503,
          102.8168503
       ],
       "casos":16,
-      "habitantes":3.07
+      "population":3.07
    },
    {
-      "pais":"Namibia",
-      "coordenadas":[
+      "country":"Namibia",
+      "coordinates":[
          -22.052103,
          17.103119
       ],
       "casos":16,
-      "habitantes":2.53
+      "population":2.53
    },
    {
-      "pais":"Netherlands",
-      "coordenadas":[
+      "country":"Netherlands",
+      "coordinates":[
          52.3738,
          4.89093
       ],
       "casos":20549,
-      "habitantes":17.18
+      "population":17.18
    },
    {
-      "pais":"Paraguay",
-      "coordenadas":[
+      "country":"Paraguay",
+      "coordinates":[
          -23.765536,
          -58.0302157
       ],
       "casos":119,
-      "habitantes":6.81
+      "population":6.81
    },
    {
-      "pais":"Peru",
-      "coordenadas":[
+      "country":"Peru",
+      "coordinates":[
          -11.335835,
          -74.1400647
       ],
       "casos":2954,
-      "habitantes":32.17
+      "population":32.17
    },
    {
-      "pais":"Portugal",
-      "coordenadas":[
+      "country":"Portugal",
+      "coordinates":[
          38.7071,
          -9.13549
       ],
       "casos":13141,
-      "habitantes":10.29
+      "population":10.29
    },
    {
-      "pais":"United Kingdom",
-      "coordenadas":[
+      "country":"United Kingdom",
+      "coordinates":[
          53.180569,
          -1.570986
       ],
       "casos":55957,
-      "habitantes":66.44
+      "population":66.44
    },
    {
-      "pais":"Romania",
-      "coordenadas":[
+      "country":"Romania",
+      "coordinates":[
          46.204196,
          24.9988703
       ],
       "casos":4761,
-      "habitantes":19.53
+      "population":19.53
    },
    {
-      "pais":"Russia",
-      "coordenadas":[
+      "country":"Russia",
+      "coordinates":[
          55.7526,
          37.6231
       ],
       "casos":8672,
-      "habitantes":146.8
+      "population":146.8
    },
    {
-      "pais":"Sri Lanka",
-      "coordenadas":[
+      "country":"Sri Lanka",
+      "coordinates":[
          7.527612,
          80.831642
       ],
       "casos":189,
-      "habitantes":21.44
+      "population":21.44
    },
    {
-      "pais":"South Africa",
-      "coordenadas":[
+      "country":"South Africa",
+      "coordinates":[
          -29.293744,
          23.817307
       ],
       "casos":1749,
-      "habitantes":56.72
+      "population":56.72
    },
    {
-      "pais":"Sweden",
-      "coordenadas":[
+      "country":"Sweden",
+      "coordinates":[
          63.49709,
          15.9927033
       ],
       "casos":8419,
-      "habitantes":10.12
+      "population":10.12
    },
    {
-      "pais":"Switzerland",
-      "coordenadas":[
+      "country":"Switzerland",
+      "coordinates":[
          46.9489,
          7.40737
       ],
       "casos":22789,
-      "habitantes":8.57
+      "population":8.57
    },
    {
-      "pais":"Thailand",
-      "coordenadas":[
+      "country":"Thailand",
+      "coordinates":[
          15.913618,
          100.7015
       ],
       "casos":2369,
-      "habitantes":69.04
+      "population":69.04
    },
    {
-      "pais":"Taiwan*",
-      "coordenadas":[
+      "country":"Taiwan*",
+      "coordinates":[
          23.3915073,
          120.3580988
       ],
       "casos":379,
-      "habitantes":23.78
+      "population":23.78
    },
    {
-      "pais":"Turkey",
-      "coordenadas":[
+      "country":"Turkey",
+      "coordinates":[
          39.9199,
          32.8543
       ],
       "casos":34109,
-      "habitantes":80.81
+      "population":80.81
    },
    {
-      "pais":"Uruguay",
-      "coordenadas":[
+      "country":"Uruguay",
+      "coordinates":[
          -33.062127,
          -55.9433197
       ],
       "casos":424,
-      "habitantes":3.45
+      "population":3.45
    },
    {
-      "pais":"Venezuela",
-      "coordenadas":[
+      "country":"Venezuela",
+      "coordinates":[
          8.217623,
          -66.3197957
       ],
       "casos":166,
-      "habitantes":31.98
+      "population":31.98
    }
 ]
