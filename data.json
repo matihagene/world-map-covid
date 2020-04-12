@@ -400,4 +400,12 @@
       ],
       "population":31.98
    }
+   {
+      "country":"Kenya",
+      "coordinates":[
+         -1.286389,
+         36.817223
+      ],
+      "population":51.39
+   },
 ]
