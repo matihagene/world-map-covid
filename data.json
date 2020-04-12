@@ -417,6 +417,46 @@
       "population":10.65
    },
    {
+      "country":"Korea, South",
+      "coordinates":[
+         37.532600,
+         127.024612
+      ],
+      "population":51.64
+   },
+   {
+      "country":"New Zealand",
+      "coordinates":[
+         -41.28664,
+         174.77557
+      ],
+      "population":4.886
+   },
+   {
+      "country":"Papua New Guinea",
+      "coordinates":[
+         -9.44314,
+         147.17972
+      ],
+      "population":8.606
+   },
+   {
+      "country":"Syria",
+      "coordinates":[
+         33.510414,
+         36.278336
+      ],
+      "population":16.91
+   },
+   {
+      "country":"Hungary",
+      "coordinates":[
+         47.497913,
+         19.040236
+      ],
+      "population":9.773
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
