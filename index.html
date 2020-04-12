@@ -48,7 +48,7 @@
                 maxZoom: 14,
                 attribution: '© MATI.CL',
           
-                 //se corrigió el valor de la cantidad de casos agregándole el punto para separar miles a través de código y creando la variable miles en la linea 74
+                 //se corrigió el valor de la cantidad de casos agregándole el punto para separar thousands a través de código y creando la variable thousands en la linea 70
 
             }).addTo(miMapa);
 
@@ -86,9 +86,9 @@
                         light = '#388e3c'; //verde para los demás casos
                     }
 
-                L.circle([latitude,longitude],{radius:100000,fillColor:light,fillOpacity:0.9,color:light,weight:1}).addTo(miMapa).bindPopup("<strong>" + data[x].country + "</strong><br />" + thousands +" confirmed cases" + "<br />" + data[x].population  + " population"); //todas los círculos tienen el mismo tamaño; que se vean distintos les muestra la "deformación" del mismo mapamundi
+                L.circle([latitude,longitude],{radius:100000,fillColor:light,fillOpacity:0.9,color:light,weight:1}).addTo(miMapa).bindPopup("<strong>" + data[x].country + "</strong><br />" + thousands +" confirmed cases" + "<br />" + data[x].population  + " population");
 
-                console.log((x+1) + ". " + data[x].country + ": " + percentage + "%"); //puedes asomarte a la Consola de Javascript
+                console.log((x+1) + ". " + data[x].country + ": " + percentage + "%"); //Console log
 
             }
         }
