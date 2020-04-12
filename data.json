@@ -521,6 +521,22 @@
       "population":0.543
    },
    {
+      "country":"Nigeria",
+      "coordinates":[
+         9.072264,
+         7.491302
+      ],
+      "population":195.9
+   },
+   {
+      "country":"Madagascar",
+      "coordinates":[
+         -18.91368,
+         47.53613
+      ],
+      "population":26.26
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
