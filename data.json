@@ -457,6 +457,30 @@
       "population":9.773
    },
    {
+      "country":"United Arab Emirates",
+      "coordinates":[
+         24.466667,
+         54.366669
+      ],
+      "population":9.631
+   },
+   {
+      "country":"Saudi Arabia",
+      "coordinates":[
+         24.774265,
+         46.738586
+      ],
+      "population":33.7
+   },
+   {
+      "country":"Iran",
+      "coordinates":[
+         35.715298,
+         51.404343
+      ],
+      "population":81.8
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
