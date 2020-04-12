@@ -481,6 +481,38 @@
       "population":81.8
    },
    {
+      "country":"Morocco",
+      "coordinates":[
+         34.01325,
+         -6.83255
+      ],
+      "population":36.03
+   },
+   {
+      "country":"Algeria",
+      "coordinates":[
+         36.737232,
+         3.086472
+      ],
+      "population":42.23
+   },
+   {
+      "country":"Libya",
+      "coordinates":[
+         32.885353,
+         13.180161
+      ],
+      "population":6.679
+   },
+   {
+      "country":"Tunisia",
+      "coordinates":[
+         36.806389,
+         10.181667
+      ],
+      "population":11.57
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
