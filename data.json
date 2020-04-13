@@ -537,6 +537,22 @@
       "population":26.26
    },
    {
+      "country":"Scotland",
+      "coordinates":[
+         55.953251,
+         -3.188267
+      ],
+      "population":5.454
+   },
+   {
+      "country":"Norway",
+      "coordinates":[
+         59.911491,
+         10.757933
+      ],
+      "population":5.368
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
