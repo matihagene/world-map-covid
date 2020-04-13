@@ -553,6 +553,14 @@
       "population":28.09
    },
    {
+      "country":"Pakistan",
+      "coordinates":[
+         33.738045,
+         73.084488
+      ],
+      "population":212.2
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
