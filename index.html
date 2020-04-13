@@ -145,7 +145,7 @@
                         light = '#388e3c'; //else green
                     }
 
-                L.circle([latitude,longitude],{radius:100000,fillColor:light,fillOpacity:0.9,color:light,weight:1}).addTo(miMapa).bindPopup("<strong>" + data[x].country + "</strong><br />" + thousands +" confirmed cases" + "<br />" + thousandsDeaths +" deaths" + "<br />" + thousandsRecovered +" recovered" + "<br /><br />" + data[x].population  + " mm population");
+                L.circle([latitude,longitude],{radius:100000,fillColor:light,fillOpacity:0.9,color:light,weight:1}).addTo(miMapa).bindPopup("<strong>" + data[x].country + "</strong><br />&bull; " + thousands +" confirmed cases" + "<br />&bull; " + thousandsDeaths +" deaths" + "<br />&bull; " + thousandsRecovered +" recovered" + "<br /><br />" + data[x].population  + " mm population");
 
                 console.log((x+1) + ". " + data[x].country + ": " + percentage + "%"); //Console log
 
