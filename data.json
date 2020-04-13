@@ -545,6 +545,14 @@
       "population":5.368
    },
    {
+      "country":"Nepal",
+      "coordinates":[
+         27.700769,
+         85.300140
+      ],
+      "population":28.09
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
