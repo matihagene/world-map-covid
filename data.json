@@ -561,6 +561,14 @@
       "population":212.2
    },
    {
+      "country":"Ukraine",
+      "coordinates":[
+         50.45466,
+         30.5238
+      ],
+      "population":41.98
+   },
+   {
       "country":"Kenya",
       "coordinates":[
          -1.286389,
