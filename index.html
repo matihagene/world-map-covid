@@ -140,6 +140,8 @@
 
                 let countryFlags = _.get(flags, [names, key5]);
 
+                if (countryFlags == undefined ){countryFlags = ""};
+
                 //Thousands allows to present the number with the thousands separator.
 
                 let percentage = (cases*100)/(data[x].population*1000000); // percentage of people with covid per country
