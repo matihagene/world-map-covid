@@ -53,6 +53,10 @@
         <option value="https://mati.cl">return to MATI.CL</option>
     </select>
 
+    <div style="position:absolute; top:10px; left:50px; width: 100px; height: auto; opacity: 50%;text-align:center; z-index:99999">
+        <img src="img/logo-covid.svg">
+    </div>
+
     <div id="mapamundi" style="width: 100vw; height: 100vh;"></div>
 
     <script>
@@ -60,13 +64,18 @@
         
         var urlCases = "https://pomber.github.io/covid19/timeseries.json";
 
+        var urlFlags = "https://raw.githubusercontent.com/matihagene/covid-database-test/master/docs/countries.json";
+
         var data;
 
         var dataCases;
 
+        var flags;
+        
         function preload() {
             data = loadJSON(url);
             dataCases = loadJSON(urlCases);
+            flags = loadJSON(urlFlags);
         }
 
 
@@ -83,7 +92,7 @@
 
             var popup = L.popup()
 			    .setLatLng([45, 18])
-			    .setContent("<strong>Welcome to COVID-19 World Map</strong><br />" + "Click the circles to display the info about the countries<br />" + "<div style='height: auto; line-height: 30px; text-align: left;'><span style='font-size: 40px; color:#d32f2f; display: inline-block; vertical-align: middle;'>&bull;</span>> 0.1% | <span style='font-size: 40px; color:#fbc02d; display: inline-block; vertical-align: middle;'>&bull;</span>> 0.01% | <span style='font-size: 40px; color:#388e3c; display: inline-block; vertical-align: middle;'>&bull;</span>< 0.01% cases/million</div><br />" + "<div style='height: auto; text-align: right;'><span style='font-size: 8px;'>*this map updates automatically | ©<a target='_blank' href='https://mati.cl'> MATI.CL</a> 2020</span></div>")
+			    .setContent("<strong>Welcome to COVID-19 World Map</strong><br />" + "Click the circles to display the info about the countries<br />" + "<div style='height: auto; line-height: 30px; text-align: left;'><span style='font-size: 40px; color:#d32f2f; display: inline-block; vertical-align: middle;'>&bull;</span>> 0.1% | <span style='font-size: 40px; color:#fbc02d; display: inline-block; vertical-align: middle;'>&bull;</span>> 0.01% | <span style='font-size: 40px; color:#388e3c; display: inline-block; vertical-align: middle;'>&bull;</span>< 0.01% cases/million</div><br />" + "<div style='height: auto; text-align: right;'><span style='font-size: 8px;'>*this map updates automatically ("+ dataCases.Afghanistan[dataCases.Afghanistan["length"]-1].date +")  | ©2020<a target='_blank' href='https://mati.cl'> MATI.CL</a></span></div>")
 			    .openOn(miMapa);
 
 			    var popup = L.popup();
@@ -113,6 +122,7 @@
 
                 let key4 = 'recovered';
 
+                let key5 = 'flag'
 
                 //I used a combination with Lodash to connect with the global data Json (dataCases) to find dinamic data into the objects.
 
@@ -126,7 +136,10 @@
 
                 let thousandsDeaths = deaths.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 
-                let thousandsRecovered = recovered.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');               
+                let thousandsRecovered = recovered.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+
+                let countryFlags = _.get(flags, [names, key5]);
+
                 //Thousands allows to present the number with the thousands separator.
 
                 let percentage = (cases*100)/(data[x].population*1000000); // percentage of people with covid per country
@@ -145,7 +158,7 @@
                         light = '#388e3c'; //else green
                     }
 
-                L.circle([latitude,longitude],{radius:100000,fillColor:light,fillOpacity:0.9,color:light,weight:1}).addTo(miMapa).bindPopup("<strong>" + data[x].country + "</strong><br />&bull; " + thousands +" confirmed cases" + "<br />&bull; " + thousandsDeaths +" deaths" + "<br />&bull; " + thousandsRecovered +" recovered" + "<br /><br />" + data[x].population  + " mm population");
+                L.circle([latitude,longitude],{radius:100000,fillColor:light,fillOpacity:0.9,color:light,weight:1}).addTo(miMapa).bindPopup("<strong> "+ countryFlags + data[x].country + " </strong><br />&bull; " + thousands +" confirmed cases" + "<br />&bull; " + thousandsDeaths +" deaths" + "<br />&bull; " + thousandsRecovered +" recovered" + "<br /><br />" + data[x].population  + " mm population");
 
                 console.log((x+1) + ". " + data[x].country + ": " + percentage + "%"); //Console log
 
