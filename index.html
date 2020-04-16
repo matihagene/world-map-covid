@@ -138,11 +138,16 @@
 
                 let thousandsRecovered = recovered.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 
-                let countryFlags = _.get(flags, [names, key5]);
-
-                if (countryFlags == undefined ){countryFlags = ""};
-
+                
                 //Thousands allows to present the number with the thousands separator.
+
+
+               	let countryFlags = _.get(flags, [names, key5]);
+
+                	if (countryFlags == undefined ){countryFlags = ""};
+
+                //Add the country flag and prevent error with countries names vs flag
+                
 
                 let percentage = (cases*100)/(data[x].population*1000000); // percentage of people with covid per country
                 
